@@ -8,14 +8,21 @@ block content
     .formGroup
       form.form.form-horizontal
         .control-group
-          label.control-label URL:
+          label.control-label 
+            span.text URL:
           .controls
             input(name='postURL', type='text').span4
         .control-group
-          label.control-label Message:
+          label.control-label 
+            span Message:
+            .btn.hasIcon
+              span.typicn.sync(data-title="sync")
           .controls
             textarea(name='postMessage').span4
         .control-group
-          label.control-label About BuildGuild:
+          label.control-label 
+            span About BuildGuild:
+            .btn.hasIcon
+              span.typicn.sync(data-title="sync")
           .controls
             textarea(name='postAboutMessage').span4

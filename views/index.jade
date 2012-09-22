@@ -1,5 +1,21 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.mainContent
+    .hero
+      hgroup
+        h1.huge Let There Be Build Guild
+    .formGroup
+      form.form.form-horizontal
+        .control-group
+          label.control-label URL:
+          .controls
+            input(name='postURL', type='text').span4
+        .control-group
+          label.control-label Message:
+          .controls
+            textarea(name='postMessage').span4
+        .control-group
+          label.control-label About BuildGuild:
+          .controls
+            textarea(name='postAboutMessage').span4
